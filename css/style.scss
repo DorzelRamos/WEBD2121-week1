@@ -7,7 +7,7 @@
     background-color: pink;
     width: 100vw;
     height: 100vh;
-    transition: background 4s;
+    transition: background-color 500ms;
 }
 @media screen and (max-width: 320px) {
     #container {
