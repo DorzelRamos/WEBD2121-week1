@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#container1 {
+  background-color: #21D4FD;
+  height: 100vh;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+#container1 header, #container1 footer {
+  height: 100px;
+  width: 100%;
+  background: green;
+}
+#container1 #wrap {
+  width: 100%;
+}
+#container1 section {
+  height: calc(100vh - 200px);
+  background: lightGreen;
+  float: left;
+}
+#container1 #leftPanel {
+  width: 200px;
+  width: 20.83%;
+  background: lightgreen;
+}
+#container1 #rightPanel {
+  width: 100px;
+  width: 10.41%;
+  background: lightgreen;
+}
+#container1 #middlePanel {
+  width: 660px;
+  width: 68.75%;
+  background: lightgray;
+}
+
+#container2 {
+  display: flex;
+}/*# sourceMappingURL=style.css.map */
