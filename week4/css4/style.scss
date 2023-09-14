@@ -64,19 +64,106 @@ $roboto: 'Roboto', sans-serif;
     height: 100vh;
     width: 100vw;
     margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    section {
-        width: 80%;
+    // display: flex;
+    // justify-content: center;
+    nav {
+        background-color: black;
+        height: 100px;
+        width: 100%;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        // flex-direction: reverse-row;
+        #logo {
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+            // margin-left: auto;
+            margin-left: 3em;
+            // margin-right: 3em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            div {
+                width: 80%;
+                height: 80%;
+                background-color: white;
+                border-radius: 50%;
+                border: 0.25em solid black;
+                span {
+                display: flex;
+                letter-spacing: 0.25em;
+                justify-content: center;    
+                margin-top: 1.5em;
+                font-family: $phudu;
+                text-size-adjust: big boy;       
+            }
+            }
+        }
+        ul {
+            list-style-type: none;
+            // margin-left: auto;
+            display: flex;
+            align-items: center;
+            margin-right: 3em;
+            li {
+                margin: 0 1em;
+                margin-left: auto;
+                a {
+                    color: white;
+                    text-decoration: none;
+                    font-family: $phudu;
+                    letter-spacing: 2px;
+                }
+            }
+        }
+    }
+    section {
+        margin-top: 3em 0;
+        padding: 3em;
+        // width: 80%;
+        width: 100%;
+        // height: calc(100vh - 100px);
+        display: flex;
+        flex-wrap: wrap; //wraps inside
+        // flex-direction: column;
+        // align-items: center;
+        // overflow-x: scroll; //makes it scrollable
+        // overflow-x: hidden; hides overflow
+        // flex-direction: column;
+        // align-items: center;
+        // justify-content: center;
+        // justify-content: space-evenly;
+        // align-items: baseline;
+        gap: 35px; //another way to space items;
+        background-color: lightseagreen;
+        // align-content: space-around;
+        // align-items: center;
+        justify-content: center; //different from align-items center
+        
+
+        div {
+            height: 250px;
+            background-color: $backGroundColor3;
+            width: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 1em;
+            border-radius: 1em;
+        }
         img {
             width: 200px;
-            height: auto;
+            // height: auto;
+            border-radius: 0.75em;
             // display: block;
             // block will stack one after the other in their own place
+            filter: sepia(100%);
+            cursor: pointer;
+            transition: all 200ms ease-in;
+        }
+        img:hover {
+            filter: none;
+            transform: scale(120%);
+            box-shadow: inset;
         }
     }
 }
