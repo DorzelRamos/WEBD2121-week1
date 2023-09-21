@@ -124,19 +124,49 @@
   <body>
     <!-- Add your site or application content here -->
 
-    <div id="container">
-      <nav>
-        <div id="logo">
-          <img src="favicomatic/mstile-310x310.png" alt="#" />
-        </div>
+
+    <!-- DIV CONTAINER STARTS HERE -->
+    <div id="nav-display">
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Services</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
+    </div>
+    <div id="container">
+      <nav>
+        <div id="logo">
+          <div>
+          <img src="favicomatic/mstile-310x310.png" alt="#" />
+          </div>
+        </div>
+
+        <div id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <!-- <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul> -->
       </nav>
+
+      <div>
+    <header>      
       <section>
+      <h1>Sneakers</h1>
+      </section>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error provident magni aliquid doloremque earum atque maxime at quas fuga cum iusto quasi hic, iure recusandae, autem beatae eligendi? Voluptatum, ipsa.</p>
+
+    </header>
+      </div>
+
+    </div>
+          <section id="products">
         <div><img src="img/sneakers/men/003.png" alt="#" /></div>
         <div><img src="img/sneakers/men/004.png" alt="#" /></div>
         <div><img src="img/sneakers/men/005.png" alt="#" /></div>
@@ -158,7 +188,11 @@
         <div><img src="img/sneakers/men/011.png" alt="#" /></div>
         <div><img src="img/sneakers/men/012.png" alt="#" /></div>
       </section>
-    </div>
+    <!-- DIV CONTAINER ENDS HERE -->
+
+    <!-- JQUERY CDN HERE -->
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <!-- JQUERY CDN HERE -->
 
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
@@ -177,5 +211,31 @@
       ga("send", "pageview");
     </script>
     <script src="https://www.google-analytics.com/analytics.js" async></script>
+
+    <!-- HAMBUERGER SCRIPT START HERE-->
+    <script>
+      // let hamburger = document.getElementById
+      // ("hamburger");
+      // console.log(hamburger);
+      // hamburger.addEventListener("click", ()=> {
+      //   document.getElementById("nav-display").
+      // style.visibility = "visible";
+      // })
+
+        console.log("#hamburger");
+
+      $(function (){
+        let hamburger = $("#hamburger");
+        let navDisplay = $("#nav-display");
+        hamburger.click(()=> {
+        navDisplay.toggle();
+        // showNavDisplay();
+        })
+        // function showNavDisplay() {
+        //   gsap.from(navDisplay, {y:-700, autoAlpha: 0, duration: 1});
+        // }
+      })
+    </script>
+    <!-- HAMBURGER SCRIPT END HERE -->
   </body>
 </html>

@@ -1,67 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 $anton: "Anton", sans-serif;
 $phudu: "Phudu", cursive;
 $roboto: "Roboto", sans-serif;
-#container {
-  nav {
-    background-color: black;
-    height: 100px;
-    width: 100%;
+#nav-display {
+  position: absolute;
+  top: calc(70px + 2em);
+  left: 0;
+  width: 100%;
+  height: calc(100vh - (70px + 2em));;
+  background-color: rgba($color: #000000, $alpha: 1.0);
+  z-index: 99;
+  display: none;
+  ul {
+    height: 100%;
+    list-style-type: none;
     display: flex;
-    // flex-direction: reverse-row;
-    #logo {
-      width: 100px;
-      height: 100px;
-      background-color: aquamarine;
-      // margin-left: auto;
-      margin-left: 3em;
-      // margin-right: 3em;
-      display: flex;
-      justify-content: center;
-    //   align-items: center;
-      div {
-        width: 80%;
-        height: 80%;
-        img {
-          width: 100%;
-        }
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    li {
+      a {
+      text-decoration: none;
+      font-family: $phudu;
+      color: white;
+      letter-spacing: 0.25em;
+      border-bottom: 2px solid white;
+      padding-bottom: 0.5em;
+      transition: all 200ms linear;
+      a:hover {
+        color: red;
+        border-bottom: 2px solid red;
       }
     }
-    ul {
-      list-style-type: none;
-      margin-left: auto;
-      display: flex;
-      align-items: center;
-      margin-right: 3em;
-      li {
-        margin: 0 1em;
-        margin-left: auto;
-        a {
-          color: white;
-          text-decoration: none;
-          font-family: $phudu;
-          letter-spacing: 2px;
-        }
+    }
+  }
+}
+#container {
+// /////////NEW NAV FROM SCRATCH START
+width: 100%;
+height: 100vh;
+background-color: black;
+background-image: url("../img/sneakers/men/007.png");
+background-repeat: no-repeat;
+background-size: 200% 100%;
+background-position: center 100px;
+overflow: hidden;
+nav {
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  #logo {
+    div {
+      img {
+        width: 70px;
+        height: auto;     
+        border-radius: 0.25em;
       }
     }
   }
+  #hamburger {
+    width: 50px;
+    height: 50px;
+    // background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: auto;
+    cursor: pointer;
+    span {
+      width: 100%;
+      height: 5px;
+      background-color: white;
+      display:block;
+    }
+  }
+}
+header {
+  width: 100%;
+  // height: 100%;
+  // background-color: red;
+  padding: 1.5em;
+  color: white;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
   section {
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 25% 25% 25% 25%;
-    grid-gap: 1em;
-        div {
-        img{
-            width: 100%;
-        }
-        }
-
-  }
-}
-@media screen and (min-width: 320px) and (max-width: 550px) {
-    #container {
-       section {
-        display: flex;
-        flex-direction: column;
-    } 
+    padding: 1.5em;
+    position: relative;
+    // top: 150px;
+    h1 {
+      text-align: center;
+      font-family: $anton;
+      letter-spacing: 0.15em;
+      border-bottom: 2px solid white;
+      p {
+        font-family: $roboto;
+        line-height: 1em;
+      }
     }
+  }
+  
 }
+// /////////NEW NAV FROM SCRATCH END
+
+  // nav {
+  //   background-color: black;
+  //   height: 100px;
+  //   width: 100%;
+  //   display: flex;
+  //   #logo {
+  //     width: 100px;
+  //     height: 100px;
+  //     background-color: aquamarine;
+  //     display: flex;
+  //     justify-content: center;  
+  //     margin-left: 3em;
+  //     div {
+  //       width: 80%;
+  //       height: 80%;
+  //       img {
+  //         width: 100%;
+  //       }
+  //     }
+  //   }
+  //   ul {
+  //     list-style-type: none;
+  //     margin-left: auto;
+  //     display: flex;
+  //     align-items: center;
+  //     margin-right: 3em;
+  //     li {
+  //       margin: 0 1em;
+  //       margin-left: auto;
+  //       a {
+  //         color: white;
+  //         text-decoration: none;
+  //         font-family: $phudu;
+  //         letter-spacing: 2px;
+  //       }
+  //     }
+  //   }
+  // }
+  // section {
+  //   display: grid;
+  //   grid-template-columns: 20% 20% 20% 20% 20%;
+  //   grid-template-rows: 25% 25% 25% 25%;
+  //   grid-gap: 1em;
+  //       div {
+  //       img{
+  //           width: 100%;
+  //       }
+  //       }
+
+  // }
+}
+#products {
+  width: 100%;
+  background-color: white;
+  position: relative;
+  height: 100vh;
+  div {
+    img {
+    width: 100%;
+    padding: 1em;
+    }
+  }
+
+}
+// @media screen and (min-width: 320px) and (max-width: 550px) {
+//     #container {
+//        section {
+//         display: flex;
+//         flex-direction: column;
+//     } 
+//     }
+// }

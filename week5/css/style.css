@@ -1,54 +1,103 @@
-#container nav {
-  background-color: black;
-  height: 100px;
-  width: 100%;
-  display: flex;
-}
-#container nav #logo {
-  width: 100px;
-  height: 100px;
-  background-color: aquamarine;
-  margin-left: 3em;
-  display: flex;
-  justify-content: center;
-}
-#container nav #logo div {
-  width: 80%;
-  height: 80%;
-}
-#container nav #logo div img {
-  width: 100%;
-}
-#container nav ul {
-  list-style-type: none;
-  margin-left: auto;
-  display: flex;
-  align-items: center;
-  margin-right: 3em;
-}
-#container nav ul li {
-  margin: 0 1em;
-  margin-left: auto;
-}
-#container nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-family: "Phudu", cursive;
-  letter-spacing: 2px;
-}
-#container section {
-  display: grid;
-  grid-template-columns: 20% 20% 20% 20% 20%;
-  grid-template-rows: 25% 25% 25% 25%;
-  grid-gap: 1em;
-}
-#container section div img {
-  width: 100%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media screen and (min-width: 320px) and (max-width: 550px) {
-  #container section {
-    display: flex;
-    flex-direction: column;
-  }
+#nav-display {
+  position: absolute;
+  top: calc(70px + 2em);
+  left: 0;
+  width: 100%;
+  height: calc(100vh - (70px + 2em));
+  background-color: black;
+  z-index: 99;
+  display: none;
+}
+#nav-display ul {
+  height: 100%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#nav-display ul li a {
+  text-decoration: none;
+  font-family: "Phudu", cursive;
+  color: white;
+  letter-spacing: 0.25em;
+  border-bottom: 2px solid white;
+  padding-bottom: 0.5em;
+  transition: all 200ms linear;
+}
+#nav-display ul li a a:hover {
+  color: red;
+  border-bottom: 2px solid red;
+}
+
+#container {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  background-image: url("../img/sneakers/men/007.png");
+  background-repeat: no-repeat;
+  background-size: 200% 100%;
+  background-position: center 100px;
+  overflow: hidden;
+}
+#container nav {
+  display: flex;
+  align-items: center;
+  padding: 1em;
+}
+#container nav #logo div img {
+  width: 70px;
+  height: auto;
+  border-radius: 0.25em;
+}
+#container nav #hamburger {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: auto;
+  cursor: pointer;
+}
+#container nav #hamburger span {
+  width: 100%;
+  height: 5px;
+  background-color: white;
+  display: block;
+}
+#container header {
+  width: 100%;
+  padding: 1.5em;
+  color: white;
+}
+#container header section {
+  padding: 1.5em;
+  position: relative;
+}
+#container header section h1 {
+  text-align: center;
+  font-family: "Anton", sans-serif;
+  letter-spacing: 0.15em;
+  border-bottom: 2px solid white;
+}
+#container header section h1 p {
+  font-family: "Roboto", sans-serif;
+  line-height: 1em;
+}
+
+#products {
+  width: 100%;
+  background-color: white;
+  position: relative;
+  height: 100vh;
+}
+#products div img {
+  width: 100%;
+  padding: 1em;
 }/*# sourceMappingURL=style.css.map */
