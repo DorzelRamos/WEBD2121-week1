@@ -196,6 +196,7 @@
 
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/main.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
@@ -228,12 +229,12 @@
         let hamburger = $("#hamburger");
         let navDisplay = $("#nav-display");
         hamburger.click(()=> {
-        navDisplay.toggle();
-        // showNavDisplay();
+        navDisplay.toggle(showNavDisplay());
+        // 
         })
-        // function showNavDisplay() {
-        //   gsap.from(navDisplay, {y:-700, autoAlpha: 0, duration: 1});
-        // }
+        function showNavDisplay() {
+          gsap.from(navDisplay, {y:-700, autoAlpha: 0, duration: 1});
+        }
       })
     </script>
     <!-- HAMBURGER SCRIPT END HERE -->
