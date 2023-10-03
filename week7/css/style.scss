@@ -1,18 +1,117 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-$veryLightBlue: #F1F9FF;
-$lightBlue: #BCE0FD;
-$regularBlue:#2699FB;
-$regularGrey: #CCCCCC;
+$veryLightBlue: #f1f9ff;
+$lightBlue: #bce0fd;
+$regularBlue: #2699fb;
+$regularGrey: #cccccc;
 $lightGrey: #d6d6d6d6;
-$darkGrey: #7F7F7F;
-$regularWhite: #FFFFFF;
+$darkGrey: #7f7f7f;
+$regularWhite: #ffffff;
 $regularBlack: #000000;
 
-
 $arial: Arial, Helvetica, sans-serif;
-$georgia: Georgia, 'Times New Roman', Times, serif;
+$georgia: Georgia, "Times New Roman", Times, serif;
 
+#container {
+  width: 100%;
+  background-color: $regularWhite;
+  nav {
+    height: 80px;
+    background-color: $regularBlue;
+    display: flex;
+    padding: 0 3em;
+    align-items: center;
+    color: $regularWhite;
+    font-family: $arial;
+    font-size: 1.5em;
+    ul {
+      display: flex;
+      margin-left: auto;
+      list-style-type: none;
+      li {
+        padding: 0.5em;
+        a {
+          text-decoration: none;
+          color: $regularWhite;
+        }
+      }
+      #signup {
+        border: 1px solid $regularWhite;
+        padding: 0.5em 0.75em;
+        margin-left: 1em;
+        border-radius: 0.5em;
+      }
+    }
+  }
+
+  #section2 {
+    width: 100%;
+    margin: 0 auto;
+
+    #section2-child {
+        height: calc(100vh - 80px);
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        padding: 2em;
+        #section-left {
+            background-color: $veryLightBlue;
+            padding: 2.5em;
+            h1 {
+                font-family: $georgia;
+                font-weight: 100;
+                color: $regularBlue;
+                font-size: 2.2em;
+                margin-bottom: 1em;
+            }
+            p {
+                font-family: $arial;
+                font-size: 1.2em;
+                line-height: 1.8em;
+                color: $regularBlue;
+            }
+        }
+        #section-right {
+            background-color: $regularGrey;
+            display: grid;
+            // grid-template-columns: 1fr 1fr 1fr;
+            // grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: repeat (3, 1fr);
+            grid-template-rows: repeat (3, 1fr);
+            grid-template-areas: 
+            "one two two"
+            "three four five"
+            "three six seven";
+            grid-gap: 0px 0px;
+            img {
+                width: 100%;
+                height: auto;
+            }
+            // everything can fit in place if you just use one to three
+            #img-1 {
+                grid-area: one;
+            }
+            #img-2 {
+                grid-area: two;
+            }
+            #img-3 {
+                grid-area: three;
+            }
+            #img-4 {
+                grid-area: four;
+            }
+            #img-5 {
+                grid-area: five;
+            }
+            #img-6 {
+                grid-area: six;
+            }
+            #img-7 {
+                grid-area: seven;
+            }
+        }
+    }
+  }
+}
