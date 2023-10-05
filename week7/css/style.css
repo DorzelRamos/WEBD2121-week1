@@ -39,14 +39,13 @@
 #container #section2 {
   width: 100%;
   margin: 0 auto;
-}
-#container #section2 #section2-child {
-  height: calc(100vh - 80px);
-  display: grid;
-  grid-template-columns: 1fr 2fr;
   padding: 2em;
 }
+#container #section2 #section2-child {
+  display: flex;
+}
 #container #section2 #section2-child #section-left {
+  width: 40%;
   background-color: #f1f9ff;
   padding: 2.5em;
 }
@@ -64,6 +63,11 @@
   color: #2699fb;
 }
 #container #section2 #section2-child #section-right {
+  height: calc(100vh - 80px - 4em);
+  height: calc(100vh - 144px);
+  width: 60%;
+  height: 60%;
+  overflow: hidden;
   background-color: #cccccc;
   display: grid;
   grid-template-columns: repeat 3, 1fr;

@@ -50,13 +50,16 @@ $georgia: Georgia, "Times New Roman", Times, serif;
   #section2 {
     width: 100%;
     margin: 0 auto;
+    padding: 2em;
 
     #section2-child {
-        height: calc(100vh - 80px);
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        padding: 2em;
+        // padding: 2em;
+        display: flex;
+        // display: grid;
+        // grid-template-columns: 1fr 2fr;
+
         #section-left {
+          width: 40%;
             background-color: $veryLightBlue;
             padding: 2.5em;
             h1 {
@@ -74,6 +77,11 @@ $georgia: Georgia, "Times New Roman", Times, serif;
             }
         }
         #section-right {
+         height: calc(100vh - 80px - 4em);
+         height: calc(100vh - 144px);
+          width: 60%;
+          height: 60%;
+          overflow: hidden;
             background-color: $regularGrey;
             display: grid;
             // grid-template-columns: 1fr 1fr 1fr;
