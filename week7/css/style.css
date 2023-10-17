@@ -1,184 +1,293 @@
 * {
   box-sizing: border-box;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+}
 
 #container {
   width: 100%;
-  background-color: #fff; }
-  #container nav {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #2699fb;
-    height: 80px;
-    padding: 1em; }
-    #container nav #brand h1 {
-      font-size: 1.5em; }
-      #container nav #brand h1 #xd {
-        display: block; }
-    #container nav #menu {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      height: 100%;
-      width: 50px;
-      margin-left: auto; }
-      #container nav #menu span {
-        height: 5px;
-        background: #fff;
-        width: 100%;
-        display: inline-block; }
-    #container nav ul {
-      visibility: hidden;
-      display: none; }
-      #container nav ul li a {
-        text-decoration: none;
-        color: #fff; }
-  #container #section1 {
-    display: flex;
-    flex-direction: column-reverse;
-    padding: 1em; }
-    #container #section1 div {
-      width: 100%; }
-    #container #section1 #section1-div1 {
-      display: flex;
-      justify-content: center; }
-      #container #section1 #section1-div1 img {
-        margin-left: 1em;
-        width: 100%; }
-    #container #section1 #section1-div2 {
-      margin-bottom: 1.5em; }
-      #container #section1 #section1-div2 h6 {
-        color: #7f7f7f;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 1em;
-        margin: 1em 0 1em 0; }
-      #container #section1 #section1-div2 h1 {
-        font-family: Georgia, "Times New Roman", Times, serif;
-        font-weight: 100;
-        color: #2699fb;
-        font-size: 2.5em;
-        margin-bottom: 1em; }
-      #container #section1 #section1-div2 button {
-        background: none;
-        color: #2699fb;
-        border: 1px solid #bce0fd;
-        font-family: Arial, Helvetica, sans-serif;
-        padding: 1em 2em;
-        border-radius: 0.5em; }
-  #container #section2 #section2-child #section-left {
-    background-color: #f1f9ff;
-    padding: 2.5em; }
-    #container #section2 #section2-child #section-left h1 {
-      font-family: Georgia, "Times New Roman", Times, serif;
-      font-weight: 100;
-      color: #2699fb;
-      font-size: 2.5em;
-      margin-bottom: 1em; }
-    #container #section2 #section2-child #section-left p {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 0.6em;
-      line-height: 2em;
-      color: #2699fb; }
-  #container #section2 #section2-child #section-right {
-    display: flex;
-    flex-direction: column; }
-    #container #section2 #section2-child #section-right img {
-      padding: 0.5em 1em; }
-  #container #cards .section3 {
-    width: 100%;
-    padding: 0.5em 1.5em; }
-    #container #cards .section3 .section3-sections {
-      display: flex;
-      align-items: center; }
-      #container #cards .section3 .section3-sections img {
-        margin-right: 1em; }
-      #container #cards .section3 .section3-sections h3 {
-        font-family: Arial, Helvetica, sans-serif;
-        color: #2699fb;
-        font-size: 0.5em; }
-      #container #cards .section3 .section3-sections span {
-        margin-left: auto;
-        font-family: Arial, Helvetica, sans-serif;
-        color: #7f7f7f;
-        font-size: 0.5em; }
-    #container #cards .section3 p {
-      font-family: Arial, Helvetica, sans-serif;
-      color: #7f7f7f;
-      font-size: 0.75em;
-      line-height: 1.5em;
-      margin-top: 2em; }
-    #container #cards .section3 img.profiles {
-      margin-top: 2em;
-      width: 100%; }
-    #container #cards .section3 .footer-icons {
-      display: flex;
-      margin-top: 2em; }
-      #container #cards .section3 .footer-icons h3 {
-        margin-left: auto;
-        font-family: Arial, Helvetica, sans-serif;
-        color: #2699fb;
-        font-size: 0.75em;
-        line-height: 1.5em; }
-  #container #section-4 {
-    margin-top: 2em;
-    width: 100%;
-    background-color: #bce0fd;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    #container #section-4 div {
-      width: 90%;
-      height: 90%;
-      background-color: #fff;
-      padding: 1em; }
-      #container #section-4 div h1 {
-        color: #7f7f7f;
-        font-family: Georgia, "Times New Roman", Times, serif;
-        font-size: 2em; }
-      #container #section-4 div p:nth-of-type(1) {
-        color: #7f7f7f;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 1.25em;
-        font-weight: 100;
-        margin: 0.5em 0 1em 0; }
-      #container #section-4 div p:nth-of-type(2) {
-        color: #2699fb;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 0.75em;
-        line-height: 2em; }
-      #container #section-4 div #div-boxes {
-        width: 100%;
-        margin: 0; }
-        #container #section-4 div #div-boxes .boxes {
-          width: 100%;
-          height: 150px;
-          background-color: #f1f9ff;
-          margin: 0.5em 0;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          padding: 2em; }
-          #container #section-4 div #div-boxes .boxes #price {
-            display: flex;
-            flex-direction: column;
-            background-color: transparent; }
-            #container #section-4 div #div-boxes .boxes #price h3, #container #section-4 div #div-boxes .boxes #price span {
-              color: #2699fb;
-              font-family: Arial, Helvetica, sans-serif;
-              font-size: 0.8em; }
-          #container #section-4 div #div-boxes .boxes div.plus {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 50px;
-            height: 50px;
-            font-size: 1.5em;
-            border-radius: 50%;
-            margin: 0;
-            margin-left: auto;
-            margin-top: -50px;
-            color: #2699fb; }
+  background-color: #fff;
+}
+#container nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #2699fb;
+  height: 80px;
+  padding: 1em;
+}
+#container nav #brand h1 {
+  font-size: 1.5em;
+}
+#container nav #brand h1 #xd {
+  display: block;
+}
+#container nav #menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 50px;
+  margin-left: auto;
+}
+#container nav #menu span {
+  height: 5px;
+  background: #fff;
+  width: 100%;
+  display: inline-block;
+}
+#container nav ul {
+  visibility: hidden;
+  display: none;
+}
+#container nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+#container #section1 {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 1em;
+}
+#container #section1 div {
+  width: 100%;
+}
+#container #section1 #section1-div1 {
+  display: flex;
+  justify-content: center;
+}
+#container #section1 #section1-div1 img {
+  margin-left: 1em;
+  width: 100%;
+}
+#container #section1 #section1-div2 {
+  margin-bottom: 1.5em;
+}
+#container #section1 #section1-div2 h6 {
+  color: #7f7f7f;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  margin: 1em 0 1em 0;
+}
+#container #section1 #section1-div2 h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 100;
+  color: #2699fb;
+  font-size: 2.5em;
+  margin-bottom: 1em;
+}
+#container #section1 #section1-div2 button {
+  background: none;
+  color: #2699fb;
+  border: 1px solid #bce0fd;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1em 2em;
+  border-radius: 0.5em;
+}
+#container #section2 #section2-child #section-left {
+  background-color: #f1f9ff;
+  padding: 2.5em;
+}
+#container #section2 #section2-child #section-left h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 100;
+  color: #2699fb;
+  font-size: 2.5em;
+  margin-bottom: 1em;
+}
+#container #section2 #section2-child #section-left p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.6em;
+  line-height: 2em;
+  color: #2699fb;
+}
+#container #section2 #section2-child #section-right {
+  display: flex;
+  flex-direction: column;
+}
+#container #section2 #section2-child #section-right img {
+  padding: 0.5em 1em;
+}
+#container #cards .section3 {
+  width: 100%;
+  padding: 0.5em 1.5em;
+}
+#container #cards .section3 .section3-sections {
+  display: flex;
+  align-items: center;
+}
+#container #cards .section3 .section3-sections img {
+  margin-right: 1em;
+}
+#container #cards .section3 .section3-sections h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2699fb;
+  font-size: 0.5em;
+}
+#container #cards .section3 .section3-sections span {
+  margin-left: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #7f7f7f;
+  font-size: 0.5em;
+}
+#container #cards .section3 p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #7f7f7f;
+  font-size: 0.75em;
+  line-height: 1.5em;
+  margin-top: 2em;
+}
+#container #cards .section3 img.profiles {
+  margin-top: 2em;
+  width: 100%;
+}
+#container #cards .section3 .footer-icons {
+  display: flex;
+  margin-top: 2em;
+}
+#container #cards .section3 .footer-icons h3 {
+  margin-left: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2699fb;
+  font-size: 0.75em;
+  line-height: 1.5em;
+}
+#container #section-4 {
+  margin-top: 2em;
+  width: 100%;
+  background-color: #bce0fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#container #section-4 #section-4-div {
+  margin: 1.5em 0;
+}
+#container #section-4 div {
+  width: 90%;
+  height: 90%;
+  background-color: #fff;
+  padding: 1em;
+}
+#container #section-4 div h1 {
+  color: #7f7f7f;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2em;
+}
+#container #section-4 div p:nth-of-type(1) {
+  color: #7f7f7f;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.25em;
+  font-weight: 100;
+  margin: 0.5em 0 1em 0;
+}
+#container #section-4 div p:nth-of-type(2) {
+  color: #2699fb;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.75em;
+  line-height: 2em;
+}
+#container #section-4 div #div-boxes {
+  width: 100%;
+  margin: 0;
+}
+#container #section-4 div #div-boxes .boxes {
+  width: 100%;
+  height: 150px;
+  background-color: #f1f9ff;
+  margin: 0.5em 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+}
+#container #section-4 div #div-boxes .boxes #price {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+}
+#container #section-4 div #div-boxes .boxes #price h3, #container #section-4 div #div-boxes .boxes #price span {
+  color: #2699fb;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#container #section-4 div #div-boxes .boxes #price span {
+  font-size: 0.8em;
+}
+#container #section-4 div #div-boxes .boxes div.plus {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5em;
+  border-radius: 50%;
+  margin: 0;
+  margin-left: auto;
+  margin-top: -50px;
+  color: #2699fb;
+  font-weight: bold;
+}
+#container footer {
+  background-color: #2699fb;
+}
+#container footer h3, #container footer p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+#container footer h3 {
+  padding: 0.5em 1em 0em 1em;
+}
+#container footer p {
+  text-align: center;
+  padding: 0.5em 1em;
+}
+#container footer form {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  justify-content: center;
+  border: 1px solid #fff;
+  width: 70%;
+  margin: 0 auto;
+  border-radius: 0.5em;
+  overflow: hidden;
+}
+#container footer form input, #container footer form button {
+  padding-block: 0;
+  padding-inline: 0;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1em;
+}
+#container footer form input {
+  color: #fff;
+  background-color: inherit;
+}
+#container footer form input::-moz-placeholder {
+  opacity: 1;
+  color: #fff;
+}
+#container footer form input::placeholder {
+  opacity: 1;
+  color: #fff;
+}
+#container footer form button {
+  color: #2699fb;
+  background-color: #fff;
+}
+#container footer #footer-nav {
+  padding: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+#container footer #footer-nav ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 60% 10% 30%;
+  grid-template-rows: repeat(3, 1fr);
+}
+#container footer #footer-nav ul li {
+  padding: 0.25em;
+}/*# sourceMappingURL=style.css.map */
