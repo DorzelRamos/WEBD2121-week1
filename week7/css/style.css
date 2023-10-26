@@ -315,6 +315,7 @@
     border-radius: 0.5em;
   }
   #container #section1 {
+    display: flex;
     margin-top: 2em;
     align-items: center;
   }
@@ -393,20 +394,30 @@
     margin: 1.5em 0;
   }
   #container #section-4 #section-4-div {
-    display: flex;
+    padding: 0;
+    height: 0%;
   }
-  #container #section-4 #section-4-div p {
-    width: 40%;
+  #container #section-4 #section-4-div #sect4-txtbox p {
+    width: 80%;
+    font-size: 1em;
     margin-bottom: 3em;
-    display: flex;
   }
   #container #section-4 #section-4-div #div-boxes {
     width: 60%;
+    padding: 0;
   }
   #container #section-4 #section-4-div #div-boxes .boxes {
-    margin: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
   }
   #container footer section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "one two" "three four five" "six seven";
+    grid-gap: 0px 0px;
     width: 80%;
     margin: 0 auto;
     padding: 2em;
