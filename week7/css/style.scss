@@ -13,48 +13,60 @@ $Arial: Arial, Helvetica, sans-serif;
 $Georgia: Georgia, "Times New Roman", Times, serif;
 
 //regular CSS and mobile setup STARTS HERE
-
-// container STARTS here
-#container {
+// /////////// put new nav OUTSIDE of #container. START here
+nav {
   width: 100%;
-  background-color: $white;
-  nav {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    color: $white;
-    font-family: $Arial;
-    background-color: $regularBlue;
-    height: 80px;
-    padding: 1em;
-    #brand {
-      h1 {
-        font-size: 1.5em;
-        #xd {
-          display: block;
-        }
+  display: flex;
+  align-items: center;
+  color: $white;
+  font-family: $Arial;
+  background-color: $regularBlue;
+  height: 80px;
+  padding: 1em;
+  #brand {
+    h1 {
+      font-size: 1.5em;
+      #xd {
+        display: block;
       }
     }
-    #menu {
+  }
+  #menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 48px;
+    width: 50px;
+    margin-left: auto;
+    cursor: pointer;
+    span {
+      height: 5px;
+      background: $white;
+      width: 100%;
+      display: inline-block;
+    }
+  }
+
+  #navigation {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: $regularBlue;
+    height: calc(100vh - 80px);
+    display: none;
+    ul {
+      position: relative;
+      top: 25%;
+      height: 300px;
+      width: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: space-evenly;
-      height: 48px;
-      // height: 100%;
-      width: 50px;
-      margin-left: auto;
-      span {
-        height: 5px;
-        background: $white;
-        width: 100%;
-        display: inline-block;
-      }
-    }
-
-    ul {
-      visibility: hidden;
-      display: none;
+      justify-content: center;
+      align-items: center;
+      list-style-type: none;
       li {
+        margin: 1em 0;
         a {
           text-decoration: none;
           color: $white;
@@ -62,6 +74,56 @@ $Georgia: Georgia, "Times New Roman", Times, serif;
       }
     }
   }
+}
+// /////////// put new nav OUTSIDE of #container. END here
+// container STARTS here
+#container {
+  width: 100%;
+  background-color: $white;
+  // nav {
+  //   width: 100%;
+  //   display: flex;
+  //   align-items: center;
+  //   color: $white;
+  //   font-family: $Arial;
+  //   background-color: $regularBlue;
+  //   height: 80px;
+  //   padding: 1em;
+  //   #brand {
+  //     h1 {
+  //       font-size: 1.5em;
+  //       #xd {
+  //         display: block;
+  //       }
+  //     }
+  //   }
+  //   #menu {
+  //     display: flex;
+  //     flex-direction: column;
+  //     justify-content: space-evenly;
+  //     height: 48px;
+  //     // height: 100%;
+  //     width: 50px;
+  //     margin-left: auto;
+  //     span {
+  //       height: 5px;
+  //       background: $white;
+  //       width: 100%;
+  //       display: inline-block;
+  //     }
+  //   }
+
+  //   ul {
+  //     visibility: hidden;
+  //     display: none;
+  //     li {
+  //       a {
+  //         text-decoration: none;
+  //         color: $white;
+  //       }
+  //     }
+  //   }
+  // }
   // section one STARTS here
   #section1 {
     display: flex;

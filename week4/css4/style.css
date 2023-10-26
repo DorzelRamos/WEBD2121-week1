@@ -73,9 +73,6 @@
   justify-content: center;
   margin-top: 1.5em;
   font-family: "Phudu", cursive;
-  -webkit-text-size-adjust: big boy;
-     -moz-text-size-adjust: big boy;
-          text-size-adjust: big boy;
 }
 #container2 nav ul {
   list-style-type: none;
