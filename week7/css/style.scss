@@ -75,55 +75,12 @@ nav {
     }
   }
 }
-// /////////// put new nav OUTSIDE of #container. END here
+// nav ENDS here
+
 // container STARTS here
 #container {
   width: 100%;
   background-color: $white;
-  // nav {
-  //   width: 100%;
-  //   display: flex;
-  //   align-items: center;
-  //   color: $white;
-  //   font-family: $Arial;
-  //   background-color: $regularBlue;
-  //   height: 80px;
-  //   padding: 1em;
-  //   #brand {
-  //     h1 {
-  //       font-size: 1.5em;
-  //       #xd {
-  //         display: block;
-  //       }
-  //     }
-  //   }
-  //   #menu {
-  //     display: flex;
-  //     flex-direction: column;
-  //     justify-content: space-evenly;
-  //     height: 48px;
-  //     // height: 100%;
-  //     width: 50px;
-  //     margin-left: auto;
-  //     span {
-  //       height: 5px;
-  //       background: $white;
-  //       width: 100%;
-  //       display: inline-block;
-  //     }
-  //   }
-
-  //   ul {
-  //     visibility: hidden;
-  //     display: none;
-  //     li {
-  //       a {
-  //         text-decoration: none;
-  //         color: $white;
-  //       }
-  //     }
-  //   }
-  // }
   // section one STARTS here
   #section1 {
     display: flex;
@@ -138,6 +95,7 @@ nav {
       img {
         margin-left: 1em;
         width: 100%;
+        height: auto;
       }
     }
     #section1-div2 {
@@ -170,6 +128,7 @@ nav {
   // section 2 STARTS here
   #section2 {
     #section2-child {
+      width: 100%;
       #section-left {
         background-color: $veryLightBlue;
         padding: 2.5em;
@@ -188,7 +147,7 @@ nav {
         }
       }
       #section-right {
-        // background-color: $mediumGrey;
+        background-color: $mediumGrey;
         display: flex;
         flex-direction: column;
         img {
@@ -394,7 +353,8 @@ footer {
   }
 }
 // //////footer ENDS here
-} //container ENDS here
+} 
+//container ENDS here
 //regular CSS and mobile setup ENDS HERE
 
 
@@ -454,49 +414,44 @@ footer {
 //             line-height: 1.5em;
 //           }
 //         }
-//         #section-right {
-//           // width: 60%;
-//           // height: auto;
-//           width: 100%;
-//           height: auto;
-//           // max-height: calc(100vh - 80px - 4em);
-//           // max-height: calc(100vh - 144px);
-//           // overflow: hidden;
-//           display: grid;
-//           grid-template-columns: repeat(3, 1fr);
-//           grid-template-rows: repeat(3, 1fr);
-//           grid-template-areas:
-//             "one two two"
-//             "three four five"
-//             "three six seven";
-//           grid-gap: 0px 0px;
-//           padding: 0;
-//           img {
-//             width: 0%;
-//             height: 0;
-//           }
-//           #img-1 {
-//             grid-area: one;
-//           }
-//           #img-2 {
-//             grid-area: two;
-//           }
-//           #img-3 {
-//             grid-area: three;
-//           }
-//           #img-4 {
-//             grid-area: four;
-//           }
-//           #img-5 {
-//             grid-area: five;
-//           }
-//           #img-6 {
-//             grid-area: six;
-//           }
-//           #img-7 {
-//             grid-area: seven;
-//           }
-//         }
+//         // #section-right {
+//         //   width: 100%;
+//         //   height: auto;
+//         //   display: grid;
+//         //   grid-template-columns: repeat(3, 1fr);
+//         //   grid-template-rows: repeat(3, 1fr);
+//         //   grid-template-areas:
+//         //     "one two two"
+//         //     "three four five"
+//         //     "three six seven";
+//         //   grid-gap: 0px 0px;
+//         //   padding: 0;
+//         //   img {
+//         //     width: 0%;
+//         //     height: 0;
+//         //   }
+//         //   #img-1 {
+//         //     grid-area: one;
+//         //   }
+//         //   #img-2 {
+//         //     grid-area: two;
+//         //   }
+//         //   #img-3 {
+//         //     grid-area: three;
+//         //   }
+//         //   #img-4 {
+//         //     grid-area: four;
+//         //   }
+//         //   #img-5 {
+//         //     grid-area: five;
+//         //   }
+//         //   #img-6 {
+//         //     grid-area: six;
+//         //   }
+//         //   #img-7 {
+//         //     grid-area: seven;
+//         //   }
+//         // }
 //       }
 //     }
 //     #cards {
@@ -545,202 +500,7 @@ footer {
 // }
 // media query for 852px min-width ENDS here
 
-
-// media query for 1360px min-width STARTS here (desktop, home version)
-// @media screen and (min-width: 1366px) {
-//   #container {
-//     display: block;
-//     // /////////////////// nav STARTS HERE
-//     nav {
-//       display: flex;
-//       padding: 0 3em;
-//       align-items: center;
-//       ul {
-//         display: flex;
-//         margin-left: auto;
-//         list-style-type: none;
-//         li {
-//           padding: 0.5em;
-//         }
-//         #signup {
-//           border: 1px solid $white;
-//           padding: 0.5em 1em;
-//           margin-left: 1em;
-//           border-radius: 0.5em;
-//         }
-//       }
-//     }
-//         // /////////////////// nav STARTS HERE
-
-//         // ////////////////// section one STARTS HERE
-//         #section1 {
-//           display: flex;
-//           margin-top: 2em;
-//           align-items: center;
-//           div {
-//             width: 70%;
-//           }
-//           #section1-div1 {
-//             img {
-//               width: 100%;
-//               height: auto;
-//             }
-//           }
-//         }
-//     // Try wrapping both section1-div1 + section2-div2 into like section2-child
-//     // #section1 {
-//     //   width: 100%;
-//     //   margin: auto;
-//     //   #sect1-boxes {
-//     //     display: flex;
-//     //     align-items: left;
-//     //     section1-div1 {
-//     //       width: 100%;
-//     //       padding: 4em;
-//     //     }
-//     //     section2-div2 {
-//     //       width: 100%;
-//     //       height: auto;
-//     //     }
-//     //   }
-//     // }
-//             // ////////////////// section one ENDS HERE
-
-//             // ////////////////// section two STARTS HERE
-//     #section2 {
-//       width: 100%;
-//       margin: 0 auto;
-//       #section2-child {
-//         display: flex;
-//         align-items: center;
-//         #section-left {
-//           width: 100%;
-//           padding: 4em;
-//           div {
-//             width: 80%;
-//             margin: 0 auto;
-//           }
-//           p {
-//             font-size: 0.8em;
-//             line-height: 1.5em;
-//           }
-//         }
-//         #section-right {
-//           // width: 60%;
-//           // height: auto;
-//           width: 100%;
-//           height: auto;
-//           display: grid;
-//           grid-template-columns: repeat(3, 1fr);
-//           grid-template-rows: repeat(3, 1fr);
-//           grid-template-areas:
-//             "one two two"
-//             "three four five"
-//             "three six seven";
-//           grid-gap: 0px 0px;
-//           padding: 0;
-//           img {
-//             width: 0%;
-//             height: 0;
-//           }
-//           #img-1 {
-//             grid-area: one;
-//           }
-//           #img-2 {
-//             grid-area: two;
-//           }
-//           #img-3 {
-//             grid-area: three;
-//           }
-//           #img-4 {
-//             grid-area: four;
-//           }
-//           #img-5 {
-//             grid-area: five;
-//           }
-//           #img-6 {
-//             grid-area: six;
-//           }
-//           #img-7 {
-//             grid-area: seven;
-//           }
-//         }
-//       }
-//     }
-//                   // ////////////////// section two ENDS HERE
-
-//                   // ////////////////// section three + cards STARTS HERE
-//     #cards {
-//       padding: 2em;
-//       margin-top: 1em;
-//       display: grid;
-//       grid-template-columns: repeat(4, 1fr);
-//       grid-template-rows: repeat(2, 1fr);
-//       column-gap: 3em;
-//       .section3 {
-//         margin: 1.5em 0;
-//       }
-//     }
-//                    // ////////////////// section three + cards ENDS HERE
-
-//                    // ////////////////// section four STARTS HERE
-//     #section-4 {
-//       #section-4-div {
-//         padding: 0;  
-//         height: 0%;
-//         #sect4-txtbox {
-//                   p {
-//           width: 80%;
-//           font-size: 1em;
-//           margin-bottom: 3em;
-//         }
-//       }
-//         #div-boxes {
-//           width: 60%;
-//           padding: 0;
-//           .boxes {
-//             // margin: 0.5em;
-//             display: flex;
-//             align-items: center;
-//             justify-content: center;
-//             padding: 2em;
-//           }
-//         }
-//       }
-//     }
-//                    // ////////////////// section four ENDS HERE
-
-//                    // ////////////////// footer STARTS HERE
-//     footer {
-//       section {
-//         display: grid;
-//         grid-template-columns: repeat(2, 1fr);
-//         grid-template-rows: repeat(2, 1fr);
-//         grid-template-areas:
-//         "one two"
-//         "three four five"
-//         "six seven";
-//         grid-gap: 0px 0px;
-//         width: 80%;
-//         margin: 0 auto;
-//         padding: 2em;
-//         #footer-nav {
-//           width: 76%;
-//         }
-//         #address {
-//           padding: 0;
-//           p {
-//             text-align: center;
-//           }
-//         }
-//       }
-//     }
-//                        // ////////////////// footer ENDS HERE
-//   }
-// }
-// media query for 1366px min-width ENDS here
-
-// media query for 1360px min-width STARTS here (desktop, home school)
+// media query for 1360px min-width STARTS here (Computer)
 @media screen and (min-width: 1366px) {
   // nav ////////////////// STARTS here
   nav {
@@ -766,7 +526,7 @@ footer {
         li {
           padding: 0.5em;
         }
-        #sign-up {
+        #signup {
           border: 1px solid $white;
           padding: 0.5em 1em;
           margin-left: 1em;
@@ -775,5 +535,104 @@ footer {
       }
     }
   }
+  // //////////////////// nav ENDS here
+
+  // ///////////////////section one STARTS here
+  #section1 {
+    margin: 5em 10em;
+      .sect1-boxes {
+      display: flex;
+    }
+    #section1-div2 {
+      margin: 2em 5em;
+    }
+  }
+  // ///////////////////section one ENDS here
+
+  // ///////////////////section two STARTS here
+ #section2 {
+  margin: 5em 10em;
+  #section2-child {
+    display:flex;
+    #section-left {
+      width: 567px;
+      height: 908px;
+    }
+    // #section-right {
+    //   width: 900px;
+    //   height: 900px;
+    // }
+  }
+ }
+  // ///////////////////section two ENDS here
+
+  // ///////////////////section three STARTS here
+  #cards {
+    margin: 5em 10em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 3em;
+  }
+  // ///////////////////section three ENDS here
+
+  // ///////////////////section four STARTS here
+  #section-4 {
+    padding: 2em 30em;
+    #section-4-div {
+      display: flex;
+      max-width: 800px;
+      max-height: 499px;
+    }
+  }
+  // ///////////////////section four ENDS here
+
+  // ///////////////////section four STARTS here
+  footer {
+    display: grid;
+    grid-template-columns: (5, 1fr);
+    grid-template-rows: (2, 1fr);
+    // grid-template-columns: repeat(5, 1fr);
+    // grid-template-rows: repeat(2, 1fr);
+    column-gap: 3em;
+          // GRID NUMBERS
+      // 1: h3 XD
+      // 2: paragraph "subscribe to our newsletters
+      // 3: form - the email address and button
+      // 4: #footer-nav icon stuff
+      // 5: #address
+      // 6: #copywrite
+      grid-template-areas:
+      "one four four two five"
+      "six six three three three";
+    grid-gap: 0px 0px;
+    padding: 0;
+    section {
+      h3.gridbox-1 {
+        grid-area: one;
+      }
+      p.gridbox-2 {
+        grid-area: two;
+      }
+      form.gridbox-3 {
+        grid-area: three;
+      }
+      section#footernav.gridbox-4 {
+        grid-area: four;
+      }
+      section#address.gridbox-5 {
+        grid-area: five;
+      }
+      section#copywrite.gridbox-6 {
+        grid-area: six;
+      }
+    }
+  }
+  // ///////////////////section four ENDS here
+
+  // ///////////////////footer STARTS here
+  // ///////////////////footer ENDS here
+
+
 }
 // media query for 1366px min-width ENDS here

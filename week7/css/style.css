@@ -82,6 +82,7 @@ nav #navigation ul li a {
 #container #section1 #section1-div1 img {
   margin-left: 1em;
   width: 100%;
+  height: auto;
 }
 #container #section1 #section1-div2 {
   margin-bottom: 1.5em;
@@ -107,6 +108,9 @@ nav #navigation ul li a {
   padding: 1em 2em;
   border-radius: 0.5em;
 }
+#container #section2 #section2-child {
+  width: 100%;
+}
 #container #section2 #section2-child #section-left {
   background-color: #f1f9ff;
   padding: 2.5em;
@@ -125,6 +129,7 @@ nav #navigation ul li a {
   color: #2699fb;
 }
 #container #section2 #section2-child #section-right {
+  background-color: #7f7f7f;
   display: flex;
   flex-direction: column;
 }
@@ -339,10 +344,73 @@ nav #navigation ul li a {
   nav #navigation ul li {
     padding: 0.5em;
   }
-  nav #navigation ul #sign-up {
+  nav #navigation ul #signup {
     border: 1px solid #fff;
     padding: 0.5em 1em;
     margin-left: 1em;
     border-radius: 0.5em;
+  }
+  #section1 {
+    margin: 5em 10em;
+  }
+  #section1 .sect1-boxes {
+    display: flex;
+  }
+  #section1 #section1-div2 {
+    margin: 2em 5em;
+  }
+  #section2 {
+    margin: 5em 10em;
+  }
+  #section2 #section2-child {
+    display: flex;
+  }
+  #section2 #section2-child #section-left {
+    width: 567px;
+    height: 908px;
+  }
+  #cards {
+    margin: 5em 10em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    -moz-column-gap: 3em;
+         column-gap: 3em;
+  }
+  #section-4 {
+    padding: 2em 30em;
+  }
+  #section-4 #section-4-div {
+    display: flex;
+    max-width: 800px;
+    max-height: 499px;
+  }
+  footer {
+    display: grid;
+    grid-template-columns: 5, 1fr;
+    grid-template-rows: 2, 1fr;
+    -moz-column-gap: 3em;
+         column-gap: 3em;
+    grid-template-areas: "one four four two five" "six six three three three";
+    grid-gap: 0px 0px;
+    padding: 0;
+  }
+  footer section h3.gridbox-1 {
+    grid-area: one;
+  }
+  footer section p.gridbox-2 {
+    grid-area: two;
+  }
+  footer section form.gridbox-3 {
+    grid-area: three;
+  }
+  footer section section#footernav.gridbox-4 {
+    grid-area: four;
+  }
+  footer section section#address.gridbox-5 {
+    grid-area: five;
+  }
+  footer section section#copywrite.gridbox-6 {
+    grid-area: six;
   }
 }/*# sourceMappingURL=style.css.map */
