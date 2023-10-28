@@ -147,7 +147,7 @@ nav {
         }
       }
       #section-right {
-        background-color: $mediumGrey;
+        // background-color: $mediumGrey;
         display: flex;
         flex-direction: column;
         img {
@@ -397,6 +397,7 @@ footer {
     #section2 {
       width: 100%;
       margin: 0 auto;
+
       // padding: 2em;
       #section2-child {
         display: flex;
@@ -427,8 +428,8 @@ footer {
           grid-gap: 0px 0px;
           padding: 0;
           img {
-            width: 0%;
-            height: 0;
+            width: 100%;
+            height: auto;
           }
           #img-1 {
             grid-area: one;

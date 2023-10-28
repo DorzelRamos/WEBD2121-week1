@@ -129,7 +129,6 @@ nav #navigation ul li a {
   color: #2699fb;
 }
 #container #section2 #section2-child #section-right {
-  background-color: #7f7f7f;
   display: flex;
   flex-direction: column;
 }
@@ -380,8 +379,8 @@ nav #navigation ul li a {
     padding: 0;
   }
   #container #section2 #section2-child #section-right img {
-    width: 0%;
-    height: 0;
+    width: 100%;
+    height: auto;
   }
   #container #section2 #section2-child #section-right #img-1 {
     grid-area: one;
