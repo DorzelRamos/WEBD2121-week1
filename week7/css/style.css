@@ -366,7 +366,7 @@ nav #navigation ul li a {
     margin: 5em 10em;
   }
   #section2 #section2-child {
-    display: flex;
+    display: flex !important;
     align-items: center;
   }
   #section2 #section2-child #section-left {
@@ -407,5 +407,16 @@ nav #navigation ul li a {
   }
   #section2 #section2-child #section-right #img-6 {
     grid-area: six;
+  }
+  #cards {
+    margin: 5em 10em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    -moz-column-gap: 3em;
+         column-gap: 3em;
+  }
+  #section-4 #section-4-div {
+    display: flex;
   }
 }/*# sourceMappingURL=style.css.map */

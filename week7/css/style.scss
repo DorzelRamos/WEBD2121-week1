@@ -554,9 +554,10 @@ nav {
 
     // ///////////////////section two STARTS here
     #section2 {
+      // position: relative;
       margin: 5em 10em;
       #section2-child {
-        display: flex;
+        display: flex !important;
         align-items: center;
         // width: 100%;
         // height: auto;
@@ -612,16 +613,21 @@ nav {
     // ///////////////////section two ENDS here
 
     // ///////////////////section three STARTS here
-    // #cards {
-    //   margin: 5em 10em;
-    //   display: grid;
-    //   grid-template-columns: repeat(4, 1fr);
-    //   grid-template-rows: repeat(2, 1fr);
-    //   column-gap: 3em;
-    // }
+    #cards {
+      margin: 5em 10em;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      column-gap: 3em;
+    }
     // ///////////////////section three ENDS here
 
     // ///////////////////section four STARTS here
+    #section-4 {
+      #section-4-div {
+        display: flex;
+      }
+    }
     // ///////////////////section four ENDS here
 
     // ///////////////////section four STARTS here
