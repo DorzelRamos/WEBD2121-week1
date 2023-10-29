@@ -290,7 +290,7 @@ nav {
   }
   // section 4 ENDS here
 
-  // /////footer STARTS here
+  /////footer STARTS here
   footer {
     background-color: $regularBlue;
     h3,
@@ -356,224 +356,72 @@ nav {
       }
     }
   }
+
   // //////footer ENDS here
 }
 //container ENDS here
-//regular CSS and mobile setup ENDS HERE
-
+// regular CSS and mobile setup ENDS HERE
 // media query for 852px min-width STARTS here (Tablet)
-// @media screen and (min-width: 852px) {
-//   #container {
-//     nav {
-//       display: flex;
-//       padding: 0 3em;
-//       align-items: center;
-//       ul {
-//         display: flex;
-//         margin-left: auto;
-//         list-style-type: none;
-//         li {
-//           padding: 0.5em;
-//         }
-//         #signup {
-//           border: 1px solid $white;
-//           padding: 0.5em 1em;
-//           margin-left: 1em;
-//           border-radius: 0.5em;
-//         }
-//       }
-//     }
-//     #section1 {
-//       margin-top: 2em;
-//       // flex-direction: column-reverse;
-//       align-items: center;
-//       div {
-//         width: 70%;
-//       }
-//       #section1-div1 {
-//         img {
-//           width: 100%;
-//           height: auto;
-//         }
-//       }
-//     }
-//     #section2 {
-//       width: 100%;
-//       margin: 0 auto;
-//       padding: 2em;
-//       #section2-child {
-//         display: flex;
-//         flex-direction: column;
-//         align-items: center;
-//         #section-left {
-//           width: 100%;
-//           padding: 4em;
-//           div {
-//             width: 80%;
-//             margin: 0 auto;
-//           }
-//           p {
-//             font-size: 0.8em;
-//             line-height: 1.5em;
-//           }
-//         }
-//         #section-right {
-//           width: 100%;
-//           height: auto;
-//           display: grid;
-//           grid-template-columns: repeat(3, 1fr);
-//           grid-template-rows: repeat(3, 1fr);
-//           grid-template-areas:
-//             "one two two"
-//             "three four five"
-//             "three six seven";
-//           grid-gap: 0px 0px;
-//           padding: 0;
-//           img {
-//             width: 100%;
-//             height: auto;
-//           }
-//           #img-1 {
-//             grid-area: one;
-//           }
-//           #img-2 {
-//             grid-area: two;
-//           }
-//           #img-3 {
-//             grid-area: three;
-//           }
-//           #img-4 {
-//             grid-area: four;
-//           }
-//           #img-5 {
-//             grid-area: five;
-//           }
-//           #img-6 {
-//             grid-area: six;
-//           }
-//           #img-7 {
-//             grid-area: seven;
-//           }
-//         }
-//       }
-//     }
-//     #cards {
-//       padding: 2em;
-//       margin-top: 1em;
-//       display: grid;
-//       grid-template-columns: repeat(2, 1fr);
-//       grid-template-rows: repeat(4, 1fr);
-//       column-gap: 3em;
-//       .section3 {
-//         margin: 1.5em 0;
-//       }
-//     }
-//     #section-4 {
-//       #section-4-div {
-//         p {
-//           width: 40%;
-//           margin-bottom: 3em;
-//         }
-//         #div-boxes {
-//           display: flex;
-//           // justify-content: space-between;
-//           .boxes {
-//             margin: 0.5em;
-//           }
-//         }
-//       }
-//     }
-//     footer {
-//       section {
-//         width: 80%;
-//         margin: 0 auto;
-//         padding: 2em;
-//         #footer-nav {
-//           width: 76%;
-//         }
-//         #address {
-//           padding: 0;
-//           p {
-//             text-align: center;
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
-// media query for 852px min-width ENDS here
 
-// media query for 1360px min-width STARTS here (Computer)
-@media screen and (min-width: 1366px) {
-  // nav ////////////////// STARTS here
+@media screen and (min-width: 852px) {
+  #container {
     nav {
       display: flex;
       padding: 0 3em;
       align-items: center;
-      #menu {
-        display: none;
-      }
-      #navigation {
-        display: block;
-        position: static;
-        top: 0;
-        height: auto;
-        width: auto;
+      ul {
+        display: flex;
         margin-left: auto;
-        ul {
-          position: static;
-          top: 0;
-          width: auto;
-          height: auto;
-          flex-direction: row;
-          li {
-            padding: 0.5em;
-          }
-          #signup {
-            border: 1px solid $white;
-            padding: 0.5em 1em;
-            margin-left: 1em;
-            border-radius: 0.5em;
-          }
+        list-style-type: none;
+        li {
+          padding: 0.5em;
+        }
+        #signup {
+          border: 1px solid $white;
+          padding: 0.5em 1em;
+          margin-left: 1em;
+          border-radius: 0.5em;
         }
       }
     }
-    // //////////////////// nav ENDS here
-
-    // ///////////////////section one STARTS here
     #section1 {
-      margin: 5em 10em;
-      .sect1-boxes {
-        display: flex;
+      margin-top: 2em;
+      // flex-direction: column-reverse;
+      align-items: center;
+      div {
+        width: 70%;
       }
-      #section1-div2 {
-        margin: 2em 5em;
+      #section1-div1 {
+        img {
+          width: 100%;
+          height: auto;
+        }
       }
     }
-    // ///////////////////section one ENDS here
-
-    // ///////////////////section two STARTS here
     #section2 {
-      // position: relative;
-      margin: 5em 10em;
+      width: 100%;
+      margin: 0 auto;
+      padding: 2em;
       #section2-child {
-        display: flex !important;
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        // width: 100%;
-        // height: auto;
         #section-left {
-          // height: 908px;
-          // width: 567px;
           width: 100%;
-          // height: auto;
-          height: 908px;
-          padding: 0;
+          padding: 4em;
+          div {
+            width: 80%;
+            margin: 0 auto;
+          }
+          p {
+            font-size: 0.8em;
+            line-height: 1.5em;
+          }
         }
         #section-right {
           width: 100%;
           height: auto;
-          display: grid !important;
-          justify-content: center;
+          display: grid;
           grid-template-columns: repeat(3, 1fr);
           grid-template-rows: repeat(3, 1fr);
           grid-template-areas:
@@ -583,11 +431,8 @@ nav {
           grid-gap: 0px 0px;
           padding: 0;
           img {
-            width: 100%;            
+            width: 100%;
             height: auto;
-            // height: 908px;
-            // max-width: 900px;
-            padding: 0;
           }
           #img-1 {
             grid-area: one;
@@ -607,34 +452,254 @@ nav {
           #img-6 {
             grid-area: six;
           }
+          #img-7 {
+            grid-area: seven;
+          }
         }
       }
     }
-    // ///////////////////section two ENDS here
-
-    // ///////////////////section three STARTS here
     #cards {
-      margin: 5em 10em;
+      padding: 2em;
+      margin-top: 1em;
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 1fr);
       column-gap: 3em;
-    }
-    // ///////////////////section three ENDS here
-
-    // ///////////////////section four STARTS here
-    #section-4 {
-      #section-4-div {
-        display: flex;
+      .section3 {
+        margin: 1.5em 0;
       }
     }
-    // ///////////////////section four ENDS here
+    #section-4 {
+      #section-4-div {
+        p {
+          width: 40%;
+          margin-bottom: 3em;
+        }
+        #div-boxes {
+          display: flex;
+          // justify-content: space-between;
+          .boxes {
+            margin: 0.5em;
+          }
+        }
+      }
+    }
+    footer {
+      section {
+        width: 80%;
+        margin: 0 auto;
+        padding: 2em;
+        #footer-nav {
+          width: 76%;
+        }
+        #address {
+          padding: 0;
+          p {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+// media query for 852px min-width ENDS here
 
-    // ///////////////////section four STARTS here
 
-    // ///////////////////section four ENDS here
+@media screen and (min-width: 1366px) {
+  .section3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
 
-    // ///////////////////footer STARTS here
-    // ///////////////////footer ENDS here
+  footer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+// media query for 1360px min-width STARTS here (Computer)
+@media screen and (min-width: 1366px) {
+  // nav ////////////////// STARTS here
+  .section3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  nav {
+    display: flex;
+    padding: 0 3em;
+    align-items: center;
+    #menu {
+      display: none;
+    }
+    #navigation {
+      display: block;
+      position: static;
+      top: 0;
+      height: auto;
+      width: auto;
+      margin-left: auto;
+      ul {
+        position: static;
+        top: 0;
+        width: auto;
+        height: auto;
+        flex-direction: row;
+        li {
+          padding: 0.5em;
+        }
+        #signup {
+          border: 1px solid $white;
+          padding: 0.5em 1em;
+          margin-left: 1em;
+          border-radius: 0.5em;
+        }
+      }
+    }
+  }
+  // //////////////////// nav ENDS here
+
+  // ///////////////////section one STARTS here
+  #section1 {
+    margin: 5em 10em;
+    .sect1-boxes {
+      display: flex;
+    }
+    #section1-div2 {
+      margin: 2em 5em;
+    }
+  }
+  // ///////////////////section one ENDS here
+
+  // ///////////////////section two STARTS here
+  #section2 {
+    // position: relative;
+    margin: 5em 10em;
+    #section2-child {
+      @supports (display: flex) {
+      }
+      display: flex !important;
+      align-items: center;
+      // width: 100%;
+      // height: auto;
+      #section-left {
+        // height: 908px;
+        // width: 567px;
+        width: 100%;
+        // height: auto;
+        height: 908px;
+        padding: 0;
+      }
+      #section-right {
+        width: 100%;
+        height: auto;
+        display: grid !important;
+        justify-content: center;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+          "one two two"
+          "three four five"
+          "three six seven";
+        grid-gap: 0px 0px;
+        padding: 0;
+        img {
+          width: 100%;
+          height: auto;
+          // height: 908px;
+          // max-width: 900px;
+          padding: 0;
+        }
+        #img-1 {
+          grid-area: one;
+        }
+        #img-2 {
+          grid-area: two;
+        }
+        #img-3 {
+          grid-area: three;
+        }
+        #img-4 {
+          grid-area: four;
+        }
+        #img-5 {
+          grid-area: five;
+        }
+        #img-6 {
+          grid-area: six;
+        }
+      }
+    }
+  }
+  // ///////////////////section two ENDS here
+
+  // ///////////////////section three STARTS here
+  #cards {
+    margin: 5em 10em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 3em;
+  }
+  // ///////////////////section three ENDS here
+
+  // ///////////////////section four STARTS here
+  #section-4 {
+    #section-4-div {
+      display: flex;
+    }
+  }
+  // ///////////////////section four ENDS here
+
+  // ///////////////////footer STARTS here
+
+  footer {
+    //grids:
+    // a h3 XD
+    // a p subscribe to our newsletter
+    // b form
+    // a #footer-nav
+    // b section#address
+    // b section#copywrite
+    // display: grid;
+    // grid-template-columns: repeat(5, 1fr);
+    // grid-template-rows: repeat(2, 1fr);
+    // grid-template-areas:
+    // "a a a a a"
+    // "b b b b b";
+    // grid-gap: 0px 0px;
+    padding: 0;
+  }
+
+  
+
+  @supports (display: grid) {
+    footer {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas:
+        "a a a a a"
+        "b b b b b";
+      grid-gap: 0px 0px;
+      padding: 0;
+    }
+  }
+  h3 {
+    grid-area: a;
+  }
+  p {
+    grid-area: a;
+  }
+  section#footer-nav {
+    grid-area: a;
+  }
+  form {
+    grid-area: b;
+  }
+  section#address {
+    grid-area: b;
+  }
+  section#copywrite {
+    grid-area: b;
+  }
+  // ///////////////////footer ENDS here
 }
 // media query for 1366px min-width ENDS here
+
