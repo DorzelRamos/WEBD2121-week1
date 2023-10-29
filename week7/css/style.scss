@@ -363,6 +363,8 @@ nav {
 // regular CSS and mobile setup ENDS HERE
 // media query for 852px min-width STARTS here (Tablet)
 
+// when u commit this media screen, the code for the second one works
+
 @media screen and (min-width: 852px) {
   #container {
     nav {
@@ -649,6 +651,8 @@ nav {
 
   // ///////////////////footer STARTS here
 
+// having issues making the grid work in the footer
+
   footer {
     //grids:
     // a h3 XD
@@ -666,8 +670,6 @@ nav {
     // grid-gap: 0px 0px;
     padding: 0;
   }
-
-  
 
   @supports (display: grid) {
     footer {
