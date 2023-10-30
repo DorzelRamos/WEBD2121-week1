@@ -153,6 +153,8 @@ nav {
         flex-direction: column;
         img {
           padding: 0;
+          width: 100%;
+          height: auto;
         }
       }
     }
@@ -364,6 +366,12 @@ nav {
 // media query for 852px min-width STARTS here (Tablet)
 
 // when u commit this media screen, the code for the second one works
+// something inside this media query is keeping the second one from working
+// it happened when I also commited #cards section, #section4, and footer
+
+// fix: inside the mobile css container, #section2-child already has display:flex
+// and flex-direction: column. The media queries were inheriting it, which clashed
+// with what I already put
 
 @media screen and (min-width: 852px) {
   #container {
@@ -388,7 +396,6 @@ nav {
     }
     #section1 {
       margin-top: 2em;
-      // flex-direction: column-reverse;
       align-items: center;
       div {
         width: 70%;
@@ -401,28 +408,26 @@ nav {
       }
     }
     #section2 {
-      width: 100%;
-      margin: 0 auto;
+      // width: 100%;
+      // margin: 0 auto;
       padding: 2em;
       #section2-child {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
         #section-left {
-          width: 100%;
-          padding: 4em;
+          // width: 100%;
+          // padding: 4em;
           div {
-            width: 80%;
+            // width: 80%;
             margin: 0 auto;
           }
           p {
             font-size: 0.8em;
-            line-height: 1.5em;
+            // line-height: 1.5em;
           }
         }
         #section-right {
-          width: 100%;
-          height: auto;
           display: grid;
           grid-template-columns: repeat(3, 1fr);
           grid-template-rows: repeat(3, 1fr);
@@ -432,10 +437,6 @@ nav {
             "three six seven";
           grid-gap: 0px 0px;
           padding: 0;
-          img {
-            width: 100%;
-            height: auto;
-          }
           #img-1 {
             grid-area: one;
           }
@@ -479,7 +480,6 @@ nav {
         }
         #div-boxes {
           display: flex;
-          // justify-content: space-between;
           .boxes {
             margin: 0.5em;
           }
@@ -506,23 +506,9 @@ nav {
 }
 // media query for 852px min-width ENDS here
 
-
-@media screen and (min-width: 1366px) {
-  .section3 {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  footer {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
 // media query for 1360px min-width STARTS here (Computer)
 @media screen and (min-width: 1366px) {
   // nav ////////////////// STARTS here
-  .section3 {
-    grid-template-columns: repeat(3, 1fr);
-  }
   nav {
     display: flex;
     padding: 0 3em;
@@ -571,61 +557,19 @@ nav {
 
   // ///////////////////section two STARTS here
   #section2 {
-    // position: relative;
-    margin: 5em 10em;
     #section2-child {
-      @supports (display: flex) {
-      }
-      display: flex !important;
+      display: flex;
       align-items: center;
-      // width: 100%;
-      // height: auto;
+      width: 100%;
       #section-left {
-        // height: 908px;
-        // width: 567px;
         width: 100%;
-        // height: auto;
-        height: 908px;
-        padding: 0;
+        height: 80em;
+        display: flex;
+        flex-direction: column;
       }
       #section-right {
         width: 100%;
-        height: auto;
-        display: grid !important;
-        justify-content: center;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-areas:
-          "one two two"
-          "three four five"
-          "three six seven";
-        grid-gap: 0px 0px;
-        padding: 0;
-        img {
-          width: 100%;
-          height: auto;
-          // height: 908px;
-          // max-width: 900px;
-          padding: 0;
-        }
-        #img-1 {
-          grid-area: one;
-        }
-        #img-2 {
-          grid-area: two;
-        }
-        #img-3 {
-          grid-area: three;
-        }
-        #img-4 {
-          grid-area: four;
-        }
-        #img-5 {
-          grid-area: five;
-        }
-        #img-6 {
-          grid-area: six;
-        }
+
       }
     }
   }
@@ -633,11 +577,11 @@ nav {
 
   // ///////////////////section three STARTS here
   #cards {
-    margin: 5em 10em;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    column-gap: 3em;
+    // margin: 5em 10em;
+    // display: grid;
+    // grid-template-columns: repeat(4, 1fr);
+    // grid-template-rows: repeat(2, 1fr);
+    // column-gap: 3em;
   }
   // ///////////////////section three ENDS here
 
