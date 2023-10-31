@@ -163,12 +163,14 @@ nav {
 
   // /////////////  section 3 STARTS here
   #cards {
+    display: grid;
+    // display grid makes css inherit here
     .section3 {
       width: 100%;
       padding: 0.5em 1.5em;
       .section3-sections {
-        display: flex;
-        align-items: center;
+        // display: flex;
+        // align-items: center;
         img {
           margin-right: 1em;
         }
@@ -464,7 +466,7 @@ nav {
     #cards {
       padding: 2em;
       margin-top: 1em;
-      display: grid;
+      // display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(4, 1fr);
       column-gap: 3em;
@@ -581,8 +583,17 @@ nav {
   //   display: grid;
   //   grid-template-columns: repeat(4, 1fr);
   //   grid-template-rows: repeat(2, 1fr);
-  //   column-gap: 3em;
   // }
+
+  #cards {
+    // display: grid;
+    grid-template-columns: repeat(4,1fr) !important;
+    grid-template-rows: repeat(2,1fr) !important;
+    column-gap: 3em;
+    .section3 {
+      margin: 5em 10em;
+    }
+  }
   // ///////////////////section three ENDS here
 
   // ///////////////////section four STARTS here

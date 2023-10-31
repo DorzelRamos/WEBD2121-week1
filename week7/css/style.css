@@ -138,13 +138,12 @@ nav #navigation ul li a {
   width: 100%;
   height: auto;
 }
+#container #cards {
+  display: grid;
+}
 #container #cards .section3 {
   width: 100%;
   padding: 0.5em 1.5em;
-}
-#container #cards .section3 .section3-sections {
-  display: flex;
-  align-items: center;
 }
 #container #cards .section3 .section3-sections img {
   margin-right: 1em;
@@ -394,7 +393,6 @@ nav #navigation ul li a {
   #container #cards {
     padding: 2em;
     margin-top: 1em;
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
     -moz-column-gap: 3em;
@@ -483,6 +481,15 @@ nav #navigation ul li a {
   }
   #section2 #section2-child #section-right {
     width: 100%;
+  }
+  #cards {
+    grid-template-columns: repeat(4, 1fr) !important;
+    grid-template-rows: repeat(2, 1fr) !important;
+    -moz-column-gap: 3em;
+         column-gap: 3em;
+  }
+  #cards .section3 {
+    margin: 5em 10em;
   }
   #section-4 #section-4-div {
     display: flex;
