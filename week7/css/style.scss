@@ -215,7 +215,6 @@ nav {
   // section 4 STARTS here
   #section-4 {
     margin-top: 2em;
-    // height: 600px;
     width: 100%;
     background-color: $lightBlue;
     display: flex;
@@ -223,135 +222,156 @@ nav {
     align-items: center;
     #section-4-div {
       margin: 1.5em 0;
-      // a
-    }
-    // padding: 1em;
-    div {
-      width: 90%;
-      height: 90%;
+      // width: 90%;
+      // height: 90%;
+      // padding: 1em;
       background-color: $white;
-      padding: 1em;
-      h1 {
-        color: $mediumGrey;
-        font-family: $Georgia;
-        font-size: 2em;
-      }
-      p:nth-of-type(1) {
-        color: $mediumGrey;
-        font-family: $Arial;
-        font-size: 1.25em;
-        font-weight: 100;
-        margin: 0.5em 0 1em 0;
-      }
-      p:nth-of-type(2) {
-        color: $regularBlue;
-        font-family: $Arial;
-        font-size: 0.75em;
-        line-height: 2em;
-      }
-      #div-boxes {
-        width: 100%;
-        margin: 0;
-        .boxes {
+        h1 {
+          color: $mediumGrey;
+          font-family: $Georgia;
+          font-size: 2em;
+        }
+        p:nth-of-type(1) {
+          color: $mediumGrey;
+          font-family: $Arial;
+          font-size: 1.25em;
+          font-weight: 100;
+          margin: 0.5em 0 1em 0;
+        }
+        p:nth-of-type(2) {
+          color: $regularBlue;
+          font-family: $Arial;
+          font-size: 0.75em;
+          line-height: 1.5em;
+        }
+        #div-boxes {
           width: 100%;
-          height: 150px;
-          background-color: $veryLightBlue;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          padding: 2em;
-          #price {
+          margin: 1.5em;
+          .boxes {
+            width: 100%;
+            height: 150px;
+            background-color: $veryLightBlue;
+            margin: 0.5em 0em;
             display: flex;
-            flex-direction: column;
-            background-color: transparent;
-            h3,
-            span {
-              color: $regularBlue;
-              font-family: $Arial;
-            }
-            span {
-              font-size: 0.8em;
-            }
-          }
-          div.plus {
-            background-color: $white;
-            display: flex;
-            justify-content: center;
             align-items: center;
-            width: 50px;
-            height: 50px;
-            font-size: 1.5em;
-            border-radius: 50%;
-            margin: 0;
-            margin-left: auto;
-            margin-top: -50px;
-            color: $regularBlue;
-            font-weight: bold;
+            // justify-content: center;
+            padding: 2em;
+            border-radius: 0.5em;
+            
+            #price {
+              display: flex;
+              flex-direction: column;
+              background-color: transparent;
+              h3,
+              span {
+                color: $regularBlue;
+                font-family: $Arial;
+              }
+              span {
+                font-size: 0.8em;
+              }
+            }
+            div.plus {
+              background-color: $white;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 50px;
+              height: 50px;
+              font-size: 1.5em;
+              border-radius: 50%;
+              margin: 0;
+              margin-left: auto;
+              // margin-top: -50px;
+              color: $regularBlue;
+              font-weight: bold;
+            }
           }
         }
-      }
+      
     }
+
   }
   // section 4 ENDS here
 
   /////footer STARTS here
   footer {
     background-color: $regularBlue;
-    h3,
-    p {
-      font-family: $Arial;
-      color: $white;
-    }
-    h3 {
-      padding: 0.5em 1em 0em 1em; // top-bottom, left-right
-    }
-    p {
-      padding: 1.5em;
-      line-height: 1.5em;
-    }
-    form {
-      display: grid;
-      grid-template-columns: 70% 30%;
-      justify-content: center;
-      border: 1px solid $white;
-      width: 70%;
-      margin: 0 auto;
-      border-radius: 0.5em;
-      overflow: hidden;
-      input,
-      button {
-        padding-block: 0;
-        padding-inline: 0;
-        border: none;
+    #footer-section {
+      h3,
+      p {
         font-family: $Arial;
-        padding: 1em;
-      }
-      input {
-        color: $white;
-        background-color: inherit;
-      }
-      input::placeholder {
-        opacity: 1;
         color: $white;
       }
-      button {
-        color: $regularBlue;
-        background-color: $white;
+      h3.start-end {
+        padding: 0.5em 1em 0 1em; // top-bottom, left-right
       }
-    }
-    #footer-nav {
-      padding: 1em;
-      font-family: $Arial;
-      color: $white;
-      // children of footer-nav can inherit fonts, color, etc.
-      ul {
-        list-style-type: none;
+      p#subscribe {
+        text-align: center;
+        padding: 0.5em 0;
+        line-height: 1.5em;
+      }
+      form {
         display: grid;
-        grid-template-columns: 60% 10% 30%;
-        grid-template-rows: repeat(3, 1fr);
-        li {
-          padding: 0.25em;
+        grid-template-columns: 70% 30%;
+        justify-content: center;
+        border: 1px solid $white;
+        width: 70%;
+        margin: 0 auto;
+        border-radius: 0.5em;
+        overflow: hidden;
+        input,
+        button {
+          padding-block: 0;
+          padding-inline: 0;
+          border: none;
+          font-family: $Arial;
+          padding: 1em;
         }
+        input {
+          color: $white;
+          background-color: inherit;
+        }
+        input::placeholder {
+          opacity: 1;
+          color: $white;
+        }
+        button {
+          color: $regularBlue;
+          background-color: $white;
+        }
+      }
+      #footer-nav {
+        padding: 1em;
+        font-family: $Arial;
+        color: $white;
+        // font-size: 12px;
+        // children of footer-nav can inherit fonts, color, etc.
+        ul {
+          list-style-type: none;
+          display: grid;
+          grid-template-columns: 60% 10% 30%;
+          grid-template-rows: repeat(3, 1fr);
+          li {
+            padding: 0.25em;
+          }
+        }
+      }
+      #address {
+        padding: 1em;
+        #address-paragraph {
+          display: flex;
+          flex-direction: column;
+          span {
+            padding: 0.25em 0;
+          }
+          span#kit {
+            font-size: 0.75em;
+          }
+        }
+      }
+      #copyright {
+        display: none;
       }
     }
   }
@@ -371,26 +391,60 @@ nav {
 // with what I put
 
 @media screen and (min-width: 852px) {
-  #container {
+    // nav ////////////////// STARTS here
     nav {
       display: flex;
       padding: 0 3em;
       align-items: center;
-      ul {
-        display: flex;
+      #menu {
+        display: none;
+      }
+      #navigation {
+        display: block;
+        position: static;
+        top: 0;
+        height: auto;
+        width: auto;
         margin-left: auto;
-        list-style-type: none;
-        li {
-          padding: 0.5em;
-        }
-        #signup {
-          border: 1px solid $white;
-          padding: 0.5em 1em;
-          margin-left: 1em;
-          border-radius: 0.5em;
+        ul {
+          position: static;
+          top: 0;
+          width: auto;
+          height: auto;
+          flex-direction: row;
+          li {
+            padding: 0.5em;
+          }
+          #signup {
+            border: 1px solid $white;
+            padding: 0.5em 1em;
+            margin-left: 1em;
+            border-radius: 0.5em;
+          }
         }
       }
     }
+    // //////////////////// nav ENDS here
+  #container {
+    // nav {
+    //   display: flex;
+    //   padding: 0 3em;
+    //   align-items: center;
+    //   ul {
+    //     display: flex;
+    //     margin-left: auto;
+    //     list-style-type: none;
+    //     li {
+    //       padding: 0.5em;
+    //     }
+    //     #signup {
+    //       border: 1px solid $white;
+    //       padding: 0.5em 1em;
+    //       margin-left: 1em;
+    //       border-radius: 0.5em;
+    //     }
+    //   }
+    // }
     #section1 {
       margin-top: 2em;
       align-items: center;
@@ -407,16 +461,16 @@ nav {
     #section2 {
       // width: 100%;
       // margin: 0 auto;
-      padding: 2em;
+      // padding: 2em;
       #section2-child {
-        // display: flex;
-        // flex-direction: column;
-        // align-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         #section-left {
-          // width: 100%;
-          // padding: 4em;
+          width: 100%;
+          padding: 4em;
           div {
-            // width: 80%;
+            width: 80%;
             margin: 0 auto;
           }
           p {
@@ -489,7 +543,7 @@ nav {
         margin: 0 auto;
         padding: 2em;
         #footer-nav {
-          width: 76%;
+          width: 74%;
         }
         #address {
           padding: 0;
@@ -505,49 +559,20 @@ nav {
 
 // media query for 1360px min-width STARTS here (Computer)
 @media screen and (min-width: 1366px) {
-  // nav ////////////////// STARTS here
-  nav {
-    display: flex;
-    padding: 0 3em;
-    align-items: center;
-    #menu {
-      display: none;
-    }
-    #navigation {
-      display: block;
-      position: static;
-      top: 0;
-      height: auto;
-      width: auto;
-      margin-left: auto;
-      ul {
-        position: static;
-        top: 0;
-        width: auto;
-        height: auto;
-        flex-direction: row;
-        li {
-          padding: 0.5em;
-        }
-        #signup {
-          border: 1px solid $white;
-          padding: 0.5em 1em;
-          margin-left: 1em;
-          border-radius: 0.5em;
-        }
-      }
-    }
-  }
-  // //////////////////// nav ENDS here
-
-  // ///////////////////section one STARTS here
+  #container {
+      // ///////////////////section one STARTS here
   #section1 {
-    margin: 5em 10em;
-    .sect1-boxes {
-      display: flex;
+    // margin: 5em 10em;
+    flex-direction: row;
+    #section1-div1 {
+    padding-left: 1em;
     }
     #section1-div2 {
-      margin: 2em 5em;
+      margin-bottom: 45em;
+      margin-left: 4em;
+      h6 {
+        font-size: 20px;
+      }
     }
   }
   // ///////////////////section one ENDS here
@@ -555,14 +580,15 @@ nav {
   // ///////////////////section two STARTS here
   #section2 {
     #section2-child {
-      display: flex;
-      align-items: center;
-      width: 100%;
+      // align-items: center;
+      // width: 100%;
+      padding-left: 3em;
+      flex-direction: row;
       #section-left {
         width: 100%;
         height: 80em;
-        display: flex;
-        flex-direction: column;
+        // display: flex;
+        // flex-direction: column;
       }
       #section-right {
         width: 100%;
@@ -579,9 +605,9 @@ nav {
     grid-template-columns: repeat(4,1fr) !important;
     grid-template-rows: repeat(2,1fr) !important;
     column-gap: 3em;
-    .section3 {
-      margin: 5em 10em;
-    }
+    // .section3 {
+    //   margin: 5em 10em;
+    // }
   }
   // ///////////////////section three ENDS here
 
@@ -638,6 +664,9 @@ footer {
 }
   
   // ///////////////////footer ENDS here
+  }
+
+
 }
 // media query for 1366px min-width ENDS here
 
