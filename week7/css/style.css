@@ -402,7 +402,7 @@ nav #navigation ul li a {
     margin: 1.5em 0;
   }
   #container #section-4 #section-4-div p {
-    width: 40%;
+    width: 100%;
     margin-bottom: 3em;
   }
   #container #section-4 #section-4-div #div-boxes {
@@ -494,35 +494,41 @@ nav #navigation ul li a {
   #section-4 #section-4-div {
     display: flex;
   }
-  footer {
-    padding: 0;
+  #section-4 #section-4-div p {
+    font-size: 1em !important;
   }
-  @supports (display: grid) {
-    footer {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      grid-template-areas: "a a a a a" "b b b b b";
-      grid-gap: 0px 0px;
-      padding: 0;
-    }
+  #section-4 #section-4-div #div-boxes {
+    flex-direction: column;
   }
-  h3 {
-    grid-area: a;
+  footer #footer-nav {
+    grid-template-columns: 55% 10% !important;
   }
-  p {
-    grid-area: a;
+  footer section {
+    display: flex;
   }
-  section#footer-nav {
-    grid-area: a;
+  footer ul {
+    grid-template-columns: 70% 10%;
   }
-  form {
-    grid-area: b;
+  footer ul li {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: "one two three four five";
   }
-  section#address {
-    grid-area: b;
+  footer h3 {
+    grid-area: one;
   }
-  section#copywrite {
-    grid-area: b;
+  footer #pandform {
+    display: flex;
+    flex-direction: column;
+    grid-area: three;
+  }
+  footer section#footer-nav {
+    grid-area: two;
+  }
+  footer section#address {
+    grid-area: six;
+  }
+  footer section#copywrite {
+    grid-area: five;
   }
 }/*# sourceMappingURL=style.css.map */
