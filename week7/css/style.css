@@ -184,7 +184,7 @@ nav #navigation ul li a {
 #container #section-4 {
   margin-top: 2em;
   width: 100%;
-  background-color: #bce0fd;
+  background-color: #f1f9ff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -195,6 +195,8 @@ nav #navigation ul li a {
   height: 90%;
   background-color: #fff;
   padding: 1em;
+  filter: drop-shadow(0.5px 0.5px 6px rgba(38, 153, 251, 0.1019607843));
+  opacity: 1;
 }
 #container #section-4 #section-4-div h1 {
   color: #7f7f7f;
@@ -255,6 +257,7 @@ nav #navigation ul li a {
   font-weight: bold;
 }
 #container footer {
+  padding: 1.5em;
   background-color: #2699fb;
 }
 #container footer #footer-section h3,
@@ -330,9 +333,10 @@ nav #navigation ul li a {
 }
 #container footer #footer-section #address #address-paragraph span#kit {
   font-size: 0.75em;
+  padding: 1.5em 0;
 }
 #container footer #footer-section #copyright {
-  display: none;
+  visibility: hidden;
 }
 
 @media screen and (min-width: 852px) {
@@ -442,6 +446,9 @@ nav #navigation ul li a {
   #container footer section #address p {
     text-align: center;
   }
+  #container footer section section#copyright {
+    visibility: hidden;
+  }
 }
 @media screen and (min-width: 1366px) {
   nav {
@@ -509,6 +516,7 @@ nav #navigation ul li a {
          column-gap: 3em;
   }
   #container #section-4 #section-4-div {
+    width: 800px;
     display: flex;
   }
   #container #section-4 #section-4-div p {
@@ -517,35 +525,31 @@ nav #navigation ul li a {
   #container #section-4 #section-4-div #div-boxes {
     flex-direction: column;
   }
-  #container footer #footer-nav {
-    grid-template-columns: 55% 10% !important;
-  }
-  #container footer section {
-    display: flex;
-  }
-  #container footer ul {
-    grid-template-columns: 70% 10%;
-  }
-  #container footer ul li {
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    grid-template-areas: "one two three four five";
+  #container footer section#footer-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "one two three four" "five two three four";
+    grid-gap: 0.5em;
+    margin-left: 5em;
   }
   #container footer h3 {
     grid-area: one;
   }
-  #container footer #pandform {
-    display: flex;
-    flex-direction: column;
-    grid-area: three;
-  }
   #container footer section#footer-nav {
     grid-area: two;
   }
-  #container footer section#address {
-    grid-area: six;
+  #container footer div {
+    grid-area: three;
   }
-  #container footer section#copywrite {
+  #container footer section#address {
+    grid-area: four;
+  }
+  #container footer section#copyright {
     grid-area: five;
+    visibility: visible !important;
+  }
+  #container footer span#kit {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
