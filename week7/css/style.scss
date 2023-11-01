@@ -430,8 +430,8 @@ nav {
         flex-direction: column;
         align-items: center;
         #section-left {
-          width: 100%;
-          padding: 4em;
+          // width: 100%;
+          // padding: 4em;
           div {
             width: 80%;
             margin: 0 auto;
@@ -603,9 +603,9 @@ nav {
     grid-template-columns: repeat(4,1fr) !important;
     grid-template-rows: repeat(2,1fr) !important;
     column-gap: 3em;
-    .section3 {
-      margin: 5em 10em;
-    }
+    // .section3 {
+    //   margin: 5em 10em;
+    // }
   }
   // ///////////////////section three ENDS here
 

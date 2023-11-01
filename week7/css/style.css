@@ -371,10 +371,6 @@ nav #navigation ul li a {
     flex-direction: column;
     align-items: center;
   }
-  #container #section2 #section2-child #section-left {
-    width: 100%;
-    padding: 4em;
-  }
   #container #section2 #section2-child #section-left div {
     width: 80%;
     margin: 0 auto;
@@ -511,9 +507,6 @@ nav #navigation ul li a {
     grid-template-rows: repeat(2, 1fr) !important;
     -moz-column-gap: 3em;
          column-gap: 3em;
-  }
-  #container #cards .section3 {
-    margin: 5em 10em;
   }
   #container #section-4 #section-4-div {
     display: flex;
