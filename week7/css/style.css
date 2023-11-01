@@ -191,7 +191,10 @@ nav #navigation ul li a {
 }
 #container #section-4 #section-4-div {
   margin: 1.5em 0;
+  width: 90%;
+  height: 90%;
   background-color: #fff;
+  padding: 1em;
 }
 #container #section-4 #section-4-div h1 {
   color: #7f7f7f;
@@ -202,8 +205,7 @@ nav #navigation ul li a {
   color: #7f7f7f;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.25em;
-  font-weight: 100;
-  margin: 0.5em 0 1em 0;
+  margin: 0.25em 0 1em 0;
 }
 #container #section-4 #section-4-div p:nth-of-type(2) {
   color: #2699fb;
@@ -213,13 +215,13 @@ nav #navigation ul li a {
 }
 #container #section-4 #section-4-div #div-boxes {
   width: 100%;
-  margin: 1.5em;
+  margin: 0;
 }
 #container #section-4 #section-4-div #div-boxes .boxes {
   width: 100%;
   height: 150px;
   background-color: #f1f9ff;
-  margin: 0.5em 0em;
+  margin: 0.5em 0;
   display: flex;
   align-items: center;
   padding: 2em;
@@ -264,9 +266,9 @@ nav #navigation ul li a {
   padding: 0.5em 1em 0 1em;
 }
 #container footer #footer-section p#subscribe {
-  text-align: center;
   padding: 0.5em 0;
   line-height: 1.5em;
+  text-align: center;
 }
 #container footer #footer-section form {
   display: grid;
@@ -334,33 +336,20 @@ nav #navigation ul li a {
 }
 
 @media screen and (min-width: 852px) {
-  nav {
+  #container nav {
     display: flex;
     padding: 0 3em;
     align-items: center;
   }
-  nav #menu {
-    display: none;
-  }
-  nav #navigation {
-    display: block;
-    position: static;
-    top: 0;
-    height: auto;
-    width: auto;
+  #container nav ul {
+    display: flex;
     margin-left: auto;
+    list-style-type: none;
   }
-  nav #navigation ul {
-    position: static;
-    top: 0;
-    width: auto;
-    height: auto;
-    flex-direction: row;
-  }
-  nav #navigation ul li {
+  #container nav ul li {
     padding: 0.5em;
   }
-  nav #navigation ul #signup {
+  #container nav ul #signup {
     border: 1px solid #fff;
     padding: 0.5em 1em;
     margin-left: 1em;
@@ -459,6 +448,38 @@ nav #navigation ul li a {
   }
 }
 @media screen and (min-width: 1366px) {
+  nav {
+    display: flex;
+    padding: 0 3em;
+    align-items: center;
+  }
+  nav #menu {
+    display: none;
+  }
+  nav #navigation {
+    display: block;
+    position: static;
+    top: 0;
+    height: auto;
+    width: auto;
+    margin-left: auto;
+  }
+  nav #navigation ul {
+    position: static;
+    top: 0;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+  }
+  nav #navigation ul li {
+    padding: 0.5em;
+  }
+  nav #navigation ul #signup {
+    border: 1px solid #fff;
+    padding: 0.5em 1em;
+    margin-left: 1em;
+    border-radius: 0.5em;
+  }
   #container #section1 {
     flex-direction: row;
   }
@@ -479,6 +500,8 @@ nav #navigation ul li a {
   #container #section2 #section2-child #section-left {
     width: 100%;
     height: 80em;
+    display: flex;
+    flex-direction: column;
   }
   #container #section2 #section2-child #section-right {
     width: 100%;
@@ -488,6 +511,9 @@ nav #navigation ul li a {
     grid-template-rows: repeat(2, 1fr) !important;
     -moz-column-gap: 3em;
          column-gap: 3em;
+  }
+  #container #cards .section3 {
+    margin: 5em 10em;
   }
   #container #section-4 #section-4-div {
     display: flex;
