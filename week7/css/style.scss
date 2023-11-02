@@ -132,7 +132,7 @@ nav {
       height: auto;
       #section-left {
         background-color: $veryLightBlue;
-        padding: 2.5em;
+        // padding: 2.5em;
         h1 {
           font-family: $Georgia;
           font-weight: 100;
@@ -369,12 +369,12 @@ nav {
           }
           span#kit {
             font-size: 0.75em;
-            padding: 1.5em 0;
+            // padding: 1.5em 0;
           }
         }
       }
       #copyright {
-        visibility: hidden;
+        display: none;
       }
     }
   }
@@ -436,8 +436,8 @@ nav {
         flex-direction: column;
         align-items: center;
         #section-left {
-          // width: 100%;
-          // padding: 4em;
+          width: 100%;
+          padding: 4em;
           div {
             width: 80%;
             margin: 0 auto;
@@ -448,6 +448,7 @@ nav {
           }
         }
         #section-right {
+          width: 100%;
           display: grid;
           grid-template-columns: repeat(3, 1fr);
           grid-template-rows: repeat(3, 1fr);
@@ -520,9 +521,9 @@ nav {
             text-align: center;
           }
         }
-        section#copyright {
-          visibility: hidden;
-        }
+        // section#copyright {
+        //   visibility: hidden;
+        // }
       }
     }
   }
@@ -586,6 +587,7 @@ nav {
     // ///////////////////section two STARTS here
     #section2 {
       #section2-child {
+        background-color: $veryLightBlue;
         // display: flex;
         // align-items: center;
         // width: 100%;
@@ -593,7 +595,7 @@ nav {
         flex-direction: row;
         #section-left {
           width: 100%;
-          height: 80em;
+          // height: 80em;
           display: flex;
           flex-direction: column;
         }
@@ -637,34 +639,62 @@ nav {
   footer { 
     section#footer-section {
       display: grid;
-      grid-template-columns: repeat(4,1fr);
-      grid-template-rows: repeat(2,1fr);
+      grid-template-columns: 15% 30% 20% 35%;
+      grid-template-rows: 70% 30%;
       grid-template-areas: "one two three four"
-                            "five two three four";
+                            "five six seven eight";
       grid-gap: 0.5em;
       margin-left: 5em;
+      h3 {
+        grid-area: one;
+      }
+      section#footer-nav {
+        grid-area: two;
+      }
+      // div {
+      //   grid-area: three;
+      // }
+      p#subscribe {
+        padding: 0;
+        position: relative;
+        top: 1em;
+        grid-area: three;
+      }
+      section#address {
+        position: relative;
+        left: 6em;
+        grid-area: four;
+        // display: none;
+        p#address-paragraph {
+          text-align: left;
+          span#kit {
+            display: none;
+            font-size: 0.75em;
+          }
+        }
+      }
+      form {
+        grid-area: seven;
+        width: 100%;
+        position: relative;
+        top: -5em;
+        height: 40px;
+      }
+      section#copyright {
+        display: block;
+        font-size: 0.75em;
+        padding: 0;
+        grid-area: five;
+        // visibility: visible !important;
+      }
     }
-    h3 {
-      grid-area: one;
-    }
-    section#footer-nav {
-      grid-area: two;
-    }
-    div {
-      grid-area: three;
-    }
-    section#address {
-      grid-area: four;
-      // display: none;
-    }
-    section#copyright {
-      grid-area: five;
-      visibility: visible !important;
-    }
-    span#kit {
-      // grid-area: six;
-      display: none;
-    }
+
+
+
+    // span#kit {
+    //   // grid-area: six;
+    //   display: none;
+    // }
   }
     
     // ///////////////////footer ENDS here

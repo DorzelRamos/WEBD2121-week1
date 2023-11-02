@@ -114,7 +114,6 @@ nav #navigation ul li a {
 }
 #container #section2 #section2-child #section-left {
   background-color: #f1f9ff;
-  padding: 2.5em;
 }
 #container #section2 #section2-child #section-left h1 {
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -333,10 +332,9 @@ nav #navigation ul li a {
 }
 #container footer #footer-section #address #address-paragraph span#kit {
   font-size: 0.75em;
-  padding: 1.5em 0;
 }
 #container footer #footer-section #copyright {
-  visibility: hidden;
+  display: none;
 }
 
 @media screen and (min-width: 852px) {
@@ -375,6 +373,10 @@ nav #navigation ul li a {
     flex-direction: column;
     align-items: center;
   }
+  #container #section2 #section2-child #section-left {
+    width: 100%;
+    padding: 4em;
+  }
   #container #section2 #section2-child #section-left div {
     width: 80%;
     margin: 0 auto;
@@ -383,6 +385,7 @@ nav #navigation ul li a {
     font-size: 0.8em;
   }
   #container #section2 #section2-child #section-right {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -446,9 +449,6 @@ nav #navigation ul li a {
   #container footer section #address p {
     text-align: center;
   }
-  #container footer section section#copyright {
-    visibility: hidden;
-  }
 }
 @media screen and (min-width: 1366px) {
   nav {
@@ -497,12 +497,12 @@ nav #navigation ul li a {
     font-size: 20px;
   }
   #container #section2 #section2-child {
+    background-color: #f1f9ff;
     padding-left: 3em;
     flex-direction: row;
   }
   #container #section2 #section2-child #section-left {
     width: 100%;
-    height: 80em;
     display: flex;
     flex-direction: column;
   }
@@ -527,29 +527,47 @@ nav #navigation ul li a {
   }
   #container footer section#footer-section {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "one two three four" "five two three four";
+    grid-template-columns: 15% 30% 20% 35%;
+    grid-template-rows: 70% 30%;
+    grid-template-areas: "one two three four" "five six seven eight";
     grid-gap: 0.5em;
     margin-left: 5em;
   }
-  #container footer h3 {
+  #container footer section#footer-section h3 {
     grid-area: one;
   }
-  #container footer section#footer-nav {
+  #container footer section#footer-section section#footer-nav {
     grid-area: two;
   }
-  #container footer div {
+  #container footer section#footer-section p#subscribe {
+    padding: 0;
+    position: relative;
+    top: 1em;
     grid-area: three;
   }
-  #container footer section#address {
+  #container footer section#footer-section section#address {
+    position: relative;
+    left: 6em;
     grid-area: four;
   }
-  #container footer section#copyright {
-    grid-area: five;
-    visibility: visible !important;
+  #container footer section#footer-section section#address p#address-paragraph {
+    text-align: left;
   }
-  #container footer span#kit {
+  #container footer section#footer-section section#address p#address-paragraph span#kit {
     display: none;
+    font-size: 0.75em;
+  }
+  #container footer section#footer-section form {
+    grid-area: seven;
+    width: 100%;
+    position: relative;
+    top: -5em;
+    height: 40px;
+  }
+  #container footer section#footer-section section#copyright {
+    display: block;
+    font-size: 0.75em;
+    padding: 0;
+    grid-area: five;
   }
 }/*# sourceMappingURL=style.css.map */
